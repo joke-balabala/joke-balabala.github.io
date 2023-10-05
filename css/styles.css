@@ -1,0 +1,155 @@
+/* styles.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* 样式 */
+header.gradient-header {
+  background: linear-gradient(to right, hwb(90 86% 13%), hwb(120 34% 8%));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  /* 其他样式 */
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 1.5rem 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0); /* Adjust the last value (0.3) to change transparency */
+  z-index: 1;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 500px; /* Adjust this value to change the maximum height */
+  object-fit: cover;
+}
+
+.banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeInDown 2s;
+  z-index: 2;
+}
+
+
+.banner h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 60px;
+  transform: translate(-50%, -50%);
+  color: white;
+  animation: fadeInDown 2s;
+  z-index: 2;
+}
+
+#research-interests {
+  padding: 2rem;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  background-color: rgba(173, 216, 230, 0.1); /* Light blue background with 10% opacity */
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  margin: 2rem;
+}
+
+#news {
+  padding: 2rem;
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  background-color: rgba(173, 216, 230, 0.1); /* Light blue background with 10% opacity */
+  font-family: 'STFangsong', 'SimSun', serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  margin: 2rem;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Hover effect for menu items */
+.menu-item a:hover {
+  color: #007bff;
+}
+
+/* Smooth scroll effect for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Keyframes for the fadeInDown animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  99.99% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Styles for menu items when scrolled */
+.menu-item.scrolled a {
+  color: #fff;
+}
+
+header.scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+
+

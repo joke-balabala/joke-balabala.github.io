@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+  <title>Shen Lab at Anhui Medical University</title>
+
+  <style>
+    /* 创建一个居中的矩形框 */
+    .centered-rectangle {
+      width: 1200px; /* 定义矩形的宽度 */
+      height: 900px; /* 定义矩形的高度 */
+      background-color: #ffffff; /* 设置矩形的背景颜色为白色 */
+      border: 2px solid #000; /* 添加边框 */
+      position: relative; /* 使用绝对定位 */
+      top: 30%; /* 垂直居中 */
+      left: 50%; /* 水平居中 */
+      transform: translate(-50%, -10%); /* 使用transform属性将矩形向左和向上移动一半的宽度和高度，以使其居中 */
+      display: flex; /* 使用 Flex 布局 */
+      justify-content: center; /* 水平居中对齐 */
+      align-items: center; /* 垂直居中对齐 */
+    }
+    
+    /* 图片样式 */
+    .centered-rectangle img {
+      display: block; /* 块级元素 */
+      margin:90px 100px 910px 500px; /* 移除默认外边距 */
+      max-width: 100%; /* 图片宽度最大为容器宽度 */
+      max-height: 100%; /* 图片高度最大为容器高度 */
+      width: 5%; /* 设置图片宽度为容器宽度的50%（可以根据需要进行调整） */
+      height: auto; /* 自动调整高度以保持宽高比 */
+    }
+
+    .image-container {
+      display: flex; /* 使用 Flex 布局 */
+      align-items: center; /* 垂直居中对齐 */
+    }
+    /* "Contact" 文字样式 */
+    .centered-rectangle p {
+      font-size: 30px; /* 设置字体大小 */
+      margin:4px 40px -10px 60px ; /* 移除默认外边距 */
+      color: #333; /* 设置文字颜色 */
+      font-weight: bold; /* 设置文字加粗 */
+      position: absolute; /* 使用绝对定位 */
+      bottom: 850px; /* 与底部的距离 */
+      left: 50%; /* 水平居中 */
+      transform: translateX(-50%); /* 水平居中对齐 */
+    }
+
+     /* 地图容器的样式 */
+     .centered-rectangle iframe {
+      /* 调整嵌入地图在文本框中的位置 */
+      position: absolute; /* 使用绝对定位 */
+      top: 10%; /* 从顶部开始位置，可以根据需要调整 */
+      left: 18%; /* 从左侧开始位置，可以根据需要调整 */
+    }
+
+  /* 添加表单的样式 */
+.contact-info form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* 标签的样式 */
+.contact-info label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* 输入框的样式 */
+.contact-info input[type="text"],
+.contact-info input[type="email"],
+.contact-info input[type="tel"],
+.contact-info input[type="sch"],
+.contact-info input[type="name"],
+.contact-info textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* 提交按钮的样式 */
+.contact-info input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* 提交按钮悬停效果 */
+.contact-info input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+  <header class="gradient-header">
+    <nav>
+      <ul>
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="news.html">News</a></li>
+        <li class="menu-item"><a href="research.html">Research</a></li>
+        <li class="menu-item"><a href="publications.html">Publications</a></li>
+        <li class="menu-item"><a href="members.html">Members</a></li>
+        <li class="menu-item"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="banner" id="contact">
+    <img src="images/contact.jpg" alt="Anhui Medical University">
+    <h1>Welcome to the Shen Lab at Anhui Medical University</h1> <!-- 在背景图片上添加文本 -->
+  </section>  
+  <footer>
+    <!-- 白色矩形框 -->
+    <div class="centered-rectangle">
+      <div class="image-container">
+        <img src="images/contact-1.jpg" alt="Your Image Description">
+      </div>
+      <p>Contact</p> <!-- 添加 Contact 文字 -->
+      <div>
+        <iframe width="800" height="800" frameborder="0" src="https://cn.bing.com/maps/embed?h=800&w=800&cp=p9nzw9ts4mk9&lvl=12&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+        </iframe>
+        
+   </div>
+    </div>
+  </div>
+<!-- 在联系信息部分添加学校地址、邮箱和联系方式等信息 -->
+<div class="contact-info">
+  <p>地址：安徽省合肥市瑶海区三十头镇玉皇山路安徽医科大学东校区尚学西楼425</p>
+  <p>邮箱：shenyin@ahmu.edu.cn</p>
+  <p>欢迎联系我们</p>
+</div>
+
+
+  <!-- 在表单中添加输入字段 -->
+<div class="contact-info">
+  <form>    
+    <label for="name">姓名：</label>
+    <input type="name" id="name" name="name" placeholder="请输入您的姓名">
+
+    <label for="address">地址：</label>
+    <textarea id="address" name="address"  placeholder="请输入您的地址"></textarea>
+
+    <label for="email">邮箱：</label>
+    <input type="email" id="email" name="email" required placeholder="请输入您的邮箱">
+
+    <label for="phone">联系电话：</label>
+    <input type="tel" id="phone" name="phone" placeholder="请输入您的联系电话">
+
+    <label for="school">学校：</label>
+    <input type="sch" id="school" name="school" placeholder="请输入您的学校">
+   
+    <!-- 您可以添加更多字段，比如姓名、公司等 -->
+
+    <input type="submit" value="提交">
+  </form>
+</div>
+
+
+<footer>
+  Copyright © 2023 Shen Lab | Built by Yin Shen
+  <div id="visitor-stats" class="center">
+    Total Visits: <span id="total-visits">0</span> | Total Visitors: <span id="total-visitors">0</span>
+  </div>
+</footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
